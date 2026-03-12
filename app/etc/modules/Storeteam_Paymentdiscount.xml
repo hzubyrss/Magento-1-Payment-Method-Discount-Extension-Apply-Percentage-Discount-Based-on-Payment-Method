@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Storeteam_Paymentdiscount>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Storeteam_Paymentdiscount>
+    </modules>
+</config>

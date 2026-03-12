@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <paymentdiscount translate="title" module="paymentdiscount">
+                                        <title>Storeteam Payment Discount</title>
+                                        <sort_order>350</sort_order>
+                                    </paymentdiscount>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

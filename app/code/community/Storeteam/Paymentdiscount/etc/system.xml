@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <paymentdiscount translate="label" module="paymentdiscount">
+            <label>Storeteam Payment Discount</label>
+            <tab>sales</tab>
+            <sort_order>350</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Settings</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enable Payment Discount</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <discount_label translate="label">
+                            <label>Default Discount Label</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </discount_label>
+                    </fields>
+                </general>
+                <methods translate="label">
+                    <label>Payment Method Discounts</label>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <all_methods translate="label">
+                            <label>Configure Discounts</label>
+                            <frontend_type>hidden</frontend_type>
+                            <frontend_model>paymentdiscount/adminhtml_system_config_methods</frontend_model>
+                            <backend_model>paymentdiscount/system_config_backend_methods</backend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </all_methods>
+                    </fields>
+                </methods>
+                <about translate="label">
+                    <label>About Storeteam</label>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <info translate="label">
+                            <label>Extension Information</label>
+                            <frontend_type>note</frontend_type>
+                            <frontend_model>paymentdiscount/adminhtml_system_config_about</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </info>
+                    </fields>
+                </about>
+            </groups>
+        </paymentdiscount>
+    </sections>
+</config>
